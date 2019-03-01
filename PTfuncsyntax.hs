@@ -164,7 +164,7 @@ numString (x:num) = show x ++ (numString num)
   *PTfuncsyntax> wordsToPhone "Good Morning, Vietnam"
   466366764648438626
 -}
-:
+
 wordsToPhone :: String -> Int
 wordsToPhone w = numListToNum (wordsToPhoneList w)
 wordsToPhoneList w = [charToPhoneDigit x| x <- w]
